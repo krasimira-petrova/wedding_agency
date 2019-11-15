@@ -2,7 +2,8 @@
 title: Wedding agency
 email: krasimira.todorova.petrova@gmail.com
 description: Make your special day to be like a fairytale
-baseurl: "" 
+destination: docs
+baseurl: "/wedding_agency" 
 url: "" 
 twitter_username: krasi.t.p
 github_username:  krasimira-petrova
