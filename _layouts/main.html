@@ -11,7 +11,7 @@
     <div class="site">
 
         <header class="site-header">
-            <h1><a href="/">{{ site.title }}</a></h1>
+            <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
             <p>{{ site.description }}</p>
 
 
@@ -19,7 +19,7 @@
                 <ul>
                 {% for page in site.pages %}
                     {% if page.title %}
-                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                    <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
                     {% endif %}
                 {% endfor %}
                 </ul>
