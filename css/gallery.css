@@ -1,0 +1,49 @@
+body {
+    padding-top: 6em;
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    opacity: 0.8;
+    transition: transform 1s;
+}
+
+img:hover {
+    opacity: 1;
+    transform: scale(1.3);
+    z-index: 20;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+}
+
+.gallery__form1 {
+    grid-column-end: span 4;
+}
+
+.gallery__form2 {
+    grid-column-end: span 3;
+}
+
+.gallery__form3 {
+    grid-column-end: span 2;
+}
+
+.gallery__form4 {
+    grid-row-end: span 2;
+}
