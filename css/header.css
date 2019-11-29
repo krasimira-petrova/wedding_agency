@@ -1,0 +1,65 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-image: url('https://source.unsplash.com/5BB_atDT4oA');
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    border-radius: 0.3em;
+    min-height: 90vh;
+    padding: 2em;
+    position: relative;
+}
+
+header:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+header h1, header nav {
+    padding: 1rem 1.4rem;
+    position: relative;
+    z-index: 5;
+}
+
+header section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 5;
+    font-size: 1.5em;
+}
+
+header section p, header section h2 {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0.6s, transform 0.5s ease-in-out 0.6s;
+}
+
+header section h2 {
+    transform: translateX(-50vw);
+    transition-delay: 1s;
+}
+
+header section p {
+    transform: translateX(-50vw);
+    transition-delay: 2s;
+}
+
+.loaded header section p, .loaded header section h2 {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+header a {
+    color: #FFF;
+    text-decoration: none;
+}
