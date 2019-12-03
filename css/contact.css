@@ -1,0 +1,30 @@
+.contacts-container {
+  margin: 5em auto 0;
+  border: 0.1em solid black;
+  border-radius: 1em;
+  background-color: rgb(255, 242, 229);
+  padding: 2em;
+  width: 60%;
+}
+
+.contacts-container input, .contacts-container textarea {
+  width: 100%;
+  padding: 1em;
+  border: 0.1em solid black;
+  border-radius: 0.5em;
+  margin: 0.5em;
+}
+
+.contacts-container textarea {
+  height: 15em;
+}
+
+.contacts-container .submit {
+  background: #fff9e5;
+  width: 20%;
+  height: 3.5em;
+}
+
+.contacts-container .submit:hover {
+  background-color: rgb(255, 236, 200);
+}

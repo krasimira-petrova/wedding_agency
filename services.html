@@ -6,19 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/site.css">
+    <script>
+        window.addEventListener('load', (event) => {
+            document.querySelector('body').classList.add('loaded');
+        });
+    </script>
     <title>Services</title>
 </head>
 
 <body>
-    <div class="site">
-        <img src="https://source.unsplash.com/gWedi4SWsHQ" alt="">
+    <div class="site-wrapper">
+        <header class="site-services">
+            <h1 class="site-title">Wedding agency</h1>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+            <section class="slogan">
+                <h2>We propose a lot of services and manage with them perfectly</h2>
+                <p>If you have an idea we can realize her</p>
+            </section>
+        </header>
+        <main class="site-content">
+            <article class="information">
+                <h3>We make your dreams come true</h3>
+                <p>Дейността на нашата агенция включва различни по вид услуги.Към организацията на всяко събитие се
+                    подхожда
+                    индивидуално,
+                    като един от основните принципи на агенцията е именно тезата, че всяко събитие е специално.
+                </p>
+            </article>
+            <article class="services">
+                <div class="media">
+                    <img src="https://source.unsplash.com/x40Q9jrEVT0" />
+                </div>
+                <div class="content">
+                    <p>Wedding planing</p>
+                </div>
+            </article>
+            <article class="services">
+                <div class="media">
+                    <img src="https://source.unsplash.com/nAvodiKjbTM" />
+                </div>
+                <div class="content">
+                    <p>Decoration of table</p>
+                </div>
+            </article>
+            <article class="services">
+                <div class="media">
+                    <img src="https://source.unsplash.com/8LtrMQfeDkQ" />
+                </div>
+                <div class="content">
+                    <p>Wedding cakes</p>
+                </div>
+            </article>
+            <article class="services">
+                <div class="media">
+                    <img src="https://source.unsplash.com/ULHxWq8reao" />
+                </div>
+                <div class="content">
+                    <p>Organizing events</p>
+                </div>
+            </article>
+        </main>
+        <footer class="site-footer">
+            <div>
+                <p>&copy; 2019 Developed and designed by Krasimira Petrova.</p>
+            </div>
+        </footer>
     </div>
-    <footer>
-        <div>
-            <p>@ 2019 Developed and designed by Krasimira Petrova.</p>
-        </div>
-    </footer>
-
 </body>
 
 </html>

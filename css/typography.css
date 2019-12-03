@@ -1,5 +1,5 @@
 html {
-    font-size: var(--font-size, 18px);
+    font-size: var(--font-size, 14px);
     line-height: var(--font-line-height, 1.5);
     font-family: var(--font-family-main, 'Verdana, sans-serif');
 }

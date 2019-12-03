@@ -1,34 +1,26 @@
-.first-row {
+.elements-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     margin: 5em;
-}
-
-.second-row {
-    display: flex;
-    justify-content: space-around;
-    margin: 5em;
+    flex-wrap: wrap;
 }
 
 .elements {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     color: #000;
-    border: 0.1em solid black;
-    border-radius: 1em;
     background: rgb(255, 242, 229);
-    width: 100%;
+    width: 23em;
     text-align: center;
     overflow: hidden;
     cursor: pointer;
-    height: 20em;
-    perspective: 600;
+    height: 16em;
     position: relative;
-    margin: 20px;
+    margin: 2em;
+    border: 1px solid black;
+    border-radius: 1em;
 }
 
-.card {
+.elements .card {
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;
@@ -36,11 +28,11 @@
     width: 100%;
 }
 
-.card:hover {
+.elements .card:hover {
     transform: rotateY(180deg);
 }
 
-.card .side {
+.elements .card>div {
     backface-visibility: hidden;
     border-radius: 6px;
     height: 100%;
@@ -49,14 +41,24 @@
     width: 100%;
 }
 
-img {
+.elements .card .front img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.card .back {
+.elements .card .back {
     background: rgb(255, 242, 229);
     color: black;
-    line-height: 100px;
     text-align: center;
     transform: rotateY(180deg);
+}
+
+.elements .card h4 {
+    margin: 0;
+}
+
+.elements .card ul {
+    text-align: left;
+    padding: 0 5em;
 }

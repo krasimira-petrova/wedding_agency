@@ -2,14 +2,37 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-image: url('https://source.unsplash.com/5BB_atDT4oA');
     background-size: cover;
-    background-position: center;
     color: #FFF;
     border-radius: 0.3em;
-    min-height: 90vh;
+    min-height: 80vh;
     padding: 2em;
     position: relative;
+}
+
+header.site-index {
+    background-image: url('https://source.unsplash.com/5BB_atDT4oA');
+    background-position: center;
+}
+
+header.site-contacts {
+    background-image: url('https://source.unsplash.com/gnm2op0m2pw');
+    background-position: center;
+}
+
+header.site-about {
+    background-image: url('https://source.unsplash.com/82p7JgzKOpo');
+    background-position: center;
+}
+
+header.site-gallery {
+    background-image: url('https://source.unsplash.com/IfjHaIoAoqE');
+    background-position: center bottom;
+}
+
+header.site-services {
+    background-image: url('https://source.unsplash.com/gWedi4SWsHQ');
+    background-position: center;
 }
 
 header:after {
@@ -23,13 +46,13 @@ header:after {
     background: rgba(0, 0, 0, 0.6);
 }
 
-header h1, header nav {
+.site-title, .site-nav {
     padding: 1rem 1.4rem;
     position: relative;
     z-index: 5;
 }
 
-header section {
+.slogan {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -39,22 +62,22 @@ header section {
     font-size: 1.5em;
 }
 
-header section p, header section h2 {
+.slogan p, .slogan h2 {
     opacity: 0;
     transition: opacity 0.5s ease-in-out 0.6s, transform 0.5s ease-in-out 0.6s;
 }
 
-header section h2 {
+.slogan h2 {
     transform: translateX(-50vw);
     transition-delay: 1s;
 }
 
-header section p {
+.slogan p {
     transform: translateX(-50vw);
     transition-delay: 2s;
 }
 
-.loaded header section p, .loaded header section h2 {
+.loaded .slogan p, .loaded .slogan h2 {
     transform: translateX(0);
     opacity: 1;
 }

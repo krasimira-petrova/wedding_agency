@@ -6,61 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/site.css">
+    <script>
+        window.addEventListener('load', (event) => {
+            document.querySelector('body').classList.add('loaded');
+        });
+    </script>
     <title>Gallery</title>
 </head>
 
 <body>
-    <div class="site">
-        <div class="gallery">
-            <div class="gallery_form1">
-                <div class="item1">
+    <div class="site-wrapper">
+        <header class="site-gallery">
+            <h1 class="site-title">Wedding agency</h1>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+            <section class="slogan">
+                <h2>Save your special moments</h2>
+                <p>Belive in love and goodness</p>
+            </section>
+        </header>
+        <main class="site-content">
+            <div class="gallery-container">
+                <div>
                     <img src="https://source.unsplash.com/40hKlFYAOeg" />
                 </div>
-                <div class="item2">
+                <div class="item-width-2">
                     <img src="https://source.unsplash.com/BruuboWUC_U" />
                 </div>
-                <div class="item3">
+                <div>
                     <img src="https://source.unsplash.com/NO8Sj4dKE8k" />
                 </div>
-            </div>
-            <div class="gallery_form2">
-                <div class="item1">
+                <div>
                     <img src="https://source.unsplash.com/K41SGnGKxVk" />
                 </div>
-                <div class="item2">
+                <div>
                     <img src="https://source.unsplash.com/IOciWbrW0vI" />
                 </div>
-                <div class="item3">
+                <div>
                     <img src="https://source.unsplash.com/gWedi4SWsHQ" />
                 </div>
-
-            </div>
-            <div class="gallery_form3">
-                <div class="item1">
+                <div>
                     <img src="https://source.unsplash.com/6vwrVGrxOKE" />
                 </div>
-                <div class="item2">
+                <div class="item-width-2">
                     <img src="https://source.unsplash.com/22JxStzTxwo" />
                 </div>
-                <div class="item3">
+                <div>
                     <img src="https://source.unsplash.com/llWjwo200fo" />
                 </div>
-            </div>
-            <div class="gallery_form4">
-                <div class="item1">
+                <div>
                     <img src="https://source.unsplash.com/w4bp40RJZ9M" />
                 </div>
-                <div class="item2">
+                <div>
                     <img src="https://source.unsplash.com/3Oa0b0TF8tg" />
                 </div>
-                <div class="item3">
+                <div class="item-width-2">
                     <img src="https://source.unsplash.com/d_9i9TaOxfI" />
                 </div>
+                <div>
+                    <img src="https://source.unsplash.com/gWedi4SWsHQ" />
+                </div>
             </div>
-        </div>
-        <footer>
+        </main>
+        <footer class="site-footer">
             <div>
-                <p>@ 2019 Developed and designed by Krasimira Petrova.</p>
+                <p>&copy; 2019 Developed and designed by Krasimira Petrova.</p>
             </div>
         </footer>
     </div>

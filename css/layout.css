@@ -1,11 +1,18 @@
 body {
+    text-align: center;
+}
+
+.site-wrapper {
     max-width: 80em;
     margin: 0 auto;
     background: rgb(255, 236, 229);
+    text-align: left;
 }
 
-.moto {
+.site-content {
+    padding: 5em;
+}
+
+.information {
     text-align: center;
-    font-size: 25px;
-    margin: 5em;
 }
