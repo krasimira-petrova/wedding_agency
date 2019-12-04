@@ -11,6 +11,10 @@ footer {
     flex-grow: 2;
 }
 
+.copy-rights a {
+    color: #bfbfbf
+}
+
 .site-footer-nav ul {
     display: flex;
     justify-content: flex-end;
