@@ -4,6 +4,11 @@
   width: 60%;
 }
 
+.contacts-container .adress {
+  text-align: right;
+  padding: 0 0 1em;
+}
+
 .contacts-container input, .contacts-container textarea {
   width: 100%;
   padding: 1em;
