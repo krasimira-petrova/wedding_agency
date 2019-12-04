@@ -6,6 +6,10 @@
     margin-top: 5em;
 }
 
+.personal:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+
 .personal .embed img {
     width: 100%;
     height: 100%;
