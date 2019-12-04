@@ -1,5 +1,33 @@
 footer {
+    display: flex;
+    justify-content: flex-end;
     background: #322924;
     color: #FFF;
     padding: 2em;
+}
+
+.copy-rights {
+    padding: 0.5em 1em;
+    flex-grow: 2;
+}
+
+.site-footer-nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.site-footer-nav li {
+    display: block;
+    list-style: none;
+}
+
+.site-footer-nav a {
+    display: block;
+    padding: 0.5em 1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-footer-nav a:hover {
+    color: #bfbfbf;
 }
