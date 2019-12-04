@@ -1,8 +1,5 @@
 .contacts-container {
   margin: 5em auto 0;
-  border: 0.1em solid black;
-  border-radius: 1em;
-  background-color: rgb(255, 242, 229);
   padding: 2em;
   width: 60%;
 }

@@ -8,7 +8,6 @@
 
 .elements {
     color: #000;
-    background: rgb(255, 242, 229);
     width: 23em;
     text-align: center;
     overflow: hidden;
@@ -16,8 +15,6 @@
     height: 16em;
     position: relative;
     margin: 2em;
-    border: 1px solid black;
-    border-radius: 1em;
 }
 
 .elements .card {
@@ -34,7 +31,7 @@
 
 .elements .card>div {
     backface-visibility: hidden;
-    border-radius: 6px;
+    border-radius: 2em;
     height: 100%;
     position: absolute;
     overflow: hidden;
@@ -48,7 +45,6 @@
 }
 
 .elements .card .back {
-    background: rgb(255, 242, 229);
     color: black;
     text-align: center;
     transform: rotateY(180deg);
