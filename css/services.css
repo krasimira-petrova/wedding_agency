@@ -12,14 +12,15 @@
     object-fit: fill;
 }
 
-.services .media { 
-    border-radius: 2em; 
+.services .media {
+    border-radius: 2em;
     overflow: hidden;
     width: 50%;
     height: 100%;
     opacity: 0.8;
     transition: transform 1s;
     cursor: pointer;
+    box-shadow: 0 0 1em rgb(106, 47, 50, 0.8);
 }
 
 .services .media:hover {

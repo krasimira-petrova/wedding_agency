@@ -5,7 +5,7 @@ body {
 .site-wrapper {
     max-width: 80em;
     margin: 0 auto;
-    background: rgb(255, 236, 229);
+    background: rgb(247, 238, 238);
     text-align: left;
 }
 
@@ -36,6 +36,7 @@ body {
     transition: transform 1s;
     object-fit: cover;
     display: block;
+    box-shadow: 0 0 1em rgb(106, 47, 50, 0.8);
 }
 
 .project-container img:hover {

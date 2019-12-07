@@ -2,6 +2,8 @@
   margin: 5em auto 0;
   padding: 2em;
   width: 60%;
+  border-radius: 2em;
+  box-shadow: 0 0 1em rgb(106, 47, 50, 0.8);
 }
 
 .contacts-container .adress {
@@ -22,11 +24,11 @@
 }
 
 .contacts-container .submit {
-  background: #fff9e5;
+  background: rgb(231, 203, 203);
   width: 20%;
   height: 3.5em;
 }
 
 .contacts-container .submit:hover {
-  background-color: rgb(255, 236, 200);
+  background-color: rgb(214, 168, 168);
 }
