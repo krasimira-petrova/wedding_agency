@@ -1,7 +1,7 @@
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(20, 20vh);
+    grid-template-rows: repeat(19, 20vh);
     grid-column-gap: 0.5em;
     grid-row-gap: 0.5em;
 }
@@ -26,98 +26,98 @@
     opacity: 1;
 }
 
-.gallery-container .item-width-1 {
+.gallery-container .item-1 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 4;
 }
 
-.gallery-container .item-width-2 {
+.gallery-container .item-2 {
     grid-column-start: 3;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
-.gallery-container .item-width-3 {
+.gallery-container .item-3 {
     grid-column-start: 6;
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 6;
 }
 
-.gallery-container .item-width-4 {
+.gallery-container .item-4 {
     grid-column-start: 3;
     grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 6;
 }
 
-.gallery-container .item-width-5 {
+.gallery-container .item-5 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 9;
 }
 
-.gallery-container .item-width-6 {
+.gallery-container .item-6 {
     grid-column-start: 3;
     grid-column-end: 9;
     grid-row-start: 6;
     grid-row-end: 9;
 }
 
-.gallery-container .item-width-7 {
+.gallery-container .item-7 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 9;
     grid-row-end: 12;
 }
 
-.gallery-container .item-width-8 {
+.gallery-container .item-8 {
     grid-column-start: 4;
     grid-column-end: 9;
     grid-row-start: 9;
     grid-row-end: 12;
 }
 
-.gallery-container .item-width-9 {
+.gallery-container .item-9 {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 12;
     grid-row-end: 16;
 }
 
-.gallery-container .item-width-10 {
+.gallery-container .item-10 {
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 12;
     grid-row-end: 16;
 }
 
-.gallery-container .item-width-11 {
+.gallery-container .item-11 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 16;
     grid-row-end: 20;
 }
 
-.gallery-container .item-width-12 {
+.gallery-container .item-12 {
     grid-column-start: 3;
     grid-column-end: 6;
     grid-row-start: 16;
     grid-row-end: 20;
 }
 
-.gallery-container .item-width-13 {
+.gallery-container .item-13 {
     grid-column-start: 6;
     grid-column-end: 9;
     grid-row-start: 16;
     grid-row-end: 18;
 }
 
-.gallery-container .item-width-14 {
+.gallery-container .item-14 {
     grid-column-start: 6;
     grid-column-end: 9;
     grid-row-start: 18;

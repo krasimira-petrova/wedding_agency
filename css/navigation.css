@@ -1,3 +1,9 @@
+.site-nav {
+    padding: 1rem 1.4rem;
+    position: relative;
+    z-index: 5;
+}
+
 .site-nav ul {
     display: flex;
 }

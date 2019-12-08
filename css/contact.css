@@ -6,7 +6,7 @@
   box-shadow: 0 0 1em rgb(106, 47, 50, 0.8);
 }
 
-.contacts-container .adress {
+.contacts-container .social {
   text-align: right;
   padding: 0 0 1em;
 }
@@ -16,7 +16,8 @@
   padding: 1em;
   border: 0.1em solid black;
   border-radius: 0.5em;
-  margin: 0.5em;
+  margin: 0.5em 0;
+  outline: none;
 }
 
 .contacts-container textarea {
@@ -27,8 +28,65 @@
   background: rgb(231, 203, 203);
   width: 20%;
   height: 3.5em;
+  font-weight: 600;
 }
 
 .contacts-container .submit:hover {
   background-color: rgb(214, 168, 168);
+}
+
+.icon-button {
+  background-color: rgb(247, 238, 238);
+  border-radius: 2.6em;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3em;
+  height: 2.1em;
+  width: 2.1em;
+  line-height: 2.5em;
+  margin: 0 0.1em;
+  position: relative;
+  text-align: center;
+  user-select: none;
+}
+
+.icon-button span {
+  display: block;
+  border-radius: 0;
+  height: 0;
+  width: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transition: all 0.3s;
+  background: #322924;
+}
+
+.icon-button:hover span {
+  width: 2.2em;
+  height: 2.2em;
+  border-radius: 2.2em;
+  margin: -1.2em;
+}
+
+.icon-button i {
+  background: none;
+  color: white;
+  height: 1.8em;
+  width: 1.8em;
+  left: 0;
+  line-height: 1.9em;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  transition: all 0.4s;
+}
+
+.icon-button i {
+  color: #322924;
+}
+
+.icon-button i:hover {
+  color: white;
 }
