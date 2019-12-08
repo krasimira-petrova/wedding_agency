@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./css/fontawesome-free-5.11.2-web/css/all.css">
+    <script>
+        window.addEventListener('load', (event) => {
+            document.querySelector('body').classList.add('loaded');
+        });
+    </script>
+    <title>
+        {% if page.title != 'Home' %}
+            {{ page.title }} - {{ site.title }}
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </title>
+</head>
+
+<body class="page-{{ page.title | slugify }}">
+    <div class="site-wrapper">
+        <header>
+            <h1 class="site-title"><i class="far fa-gem"></i> Wedding agency</h1>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+            <section class="slogan">
+                <h2>{{ page.slogan_title }}</h2>
+                <p>{{ page.slogan_description }}</p>
+            </section>
+        </header>
+        <main class="site-content">
+            {{ content }}
+        </main>
+        <footer class="site-footer">
+            <div class="copy-rights">
+                <p>&copy; 2019 Developed and designed by <a href="mailto:krasimira.todorova.petrova@gmail.com">Krasimira
+                        Petrova</a>.</p>
+            </div>
+            <nav class="site-footer-nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>

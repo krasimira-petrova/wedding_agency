@@ -10,28 +10,33 @@ header {
     position: relative;
 }
 
-header.site-index {
+.page-home header {
     background-image: url('https://source.unsplash.com/5BB_atDT4oA');
     background-position: center;
 }
 
-header.site-contacts {
-    background-image: url('https://source.unsplash.com/gnm2op0m2pw');
-    background-position: center;
-}
-
-header.site-about {
+.page-about header {
     background-image: url('https://source.unsplash.com/82p7JgzKOpo');
     background-position: center;
 }
 
-header.site-gallery {
+.page-services header {
+    background-image: url('https://source.unsplash.com/gWedi4SWsHQ');
+    background-position: center;
+}
+
+.page-gallery header {
     background-image: url('https://source.unsplash.com/IfjHaIoAoqE');
     background-position: center bottom;
 }
 
-header.site-services {
-    background-image: url('https://source.unsplash.com/gWedi4SWsHQ');
+.page-contacts header {
+    background-image: url('https://source.unsplash.com/gnm2op0m2pw');
+    background-position: center;
+}
+
+.page-not-found header {
+    background-image: url('https://source.unsplash.com/MljwsnGwdOY');
     background-position: center;
 }
 
