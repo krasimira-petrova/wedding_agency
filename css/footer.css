@@ -6,12 +6,12 @@ footer {
     padding: 2em;
 }
 
-.copy-rights {
+footer .copyright {
     padding: 0.5em 1em;
     flex-grow: 2;
 }
 
-.copy-rights a {
+footer .copyright a {
     color: #bfbfbf
 }
 

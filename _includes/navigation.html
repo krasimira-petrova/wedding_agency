@@ -1,14 +1,12 @@
-<nav class="site-nav">
+<nav class="{% if include.location == 'header' %}site-nav{% endif %}{% if include.location == 'footer' %}site-footer-nav{% endif %}">
     <ul>
         {% assign navigation_pages = site.pages | sort:"order" %}
 
         {% for current_page in navigation_pages %}
-            {% if current_page.title %}
-                {% if current_page.title != 'Not Found'  %}
-                    <li class="{% if current_page.url == page.url %}current-page{% endif %}">
-                        <a href="{{ site.baseurl }}{{ current_page.url }}">{{ current_page.title }}</a>
-                    </li>
-                {% endif %}
+            {% if current_page.title and current_page.title != 'Not Found' %}
+                <li class="{% if current_page.url == page.url %}current-page{% endif %}">
+                    <a href="{{ site.baseurl }}{{ current_page.url }}">{{ current_page.title }}</a>
+                </li>
             {% endif %}
         {% endfor %}
     </ul>
