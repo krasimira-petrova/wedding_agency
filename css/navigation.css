@@ -17,6 +17,10 @@
     transition: opacity 0.3s ease-in, transform 0.3s ease-in;
 }
 
+.site-nav ul li.current-page a {
+    color: rgb(214, 168, 168);
+}
+
 .site-nav ul li:nth-child(1) {
     transition-delay: 0.4s;
 }
