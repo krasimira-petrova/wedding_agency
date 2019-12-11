@@ -57,3 +57,43 @@
 .site-nav ul li a:hover {
     background: rgba(0, 0, 0, 0.9);
 }
+
+.site-nav-toggle {
+    display: none;
+}
+
+.site-nav-toggle-label {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .site-nav {
+        display: none;
+        padding-top: 0;
+    }
+    .site-nav ul {
+        display: block;
+        text-align: right;
+    }
+    .site-nav ul li {
+        margin: 0.2em 0 0.2em auto;
+        text-align: right;
+        width: 8em;
+        padding: 0;
+    }
+    .site-nav-toggle-container {
+        text-align: right;
+    }
+    .site-nav-toggle-label {
+        display: inline-block;
+        position: relative;
+        z-index: 5;
+        padding: 0.5em 1em;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 0.2em;
+        width: 8em;
+    }
+    .site-nav-toggle:checked+.site-wrapper header .site-nav {
+        display: block;
+    }
+}

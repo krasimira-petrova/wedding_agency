@@ -1,3 +1,9 @@
+{% if include.location == 'header' %}
+    <div class="site-nav-toggle-container">
+        <label for="site-nav-toggle" class="site-nav-toggle-label">Menu</label>
+    </div>
+{% endif %}
+
 <nav class="{% if include.location == 'header' %}site-nav{% endif %}{% if include.location == 'footer' %}site-footer-nav{% endif %}">
     <ul>
         {% assign navigation_pages = site.pages | sort:"order" %}
