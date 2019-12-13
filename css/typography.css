@@ -44,7 +44,7 @@ h6 {
 
 @media (max-width: 700px) {
     html {
-        font-size: var(--font-size-resposive, 12px);
+        font-size: var(--font-size-responsive, 12px);
         line-height: var(--font-line-height-responsive, 1.4);
     }
 
