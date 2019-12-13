@@ -35,3 +35,9 @@ footer .copyright a {
 .site-footer-nav a:hover {
     color: #bfbfbf;
 }
+
+@media (max-width: 600px) {
+    .site-footer-nav {
+        display: none;
+    }
+}
