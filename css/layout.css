@@ -12,3 +12,9 @@
 .information {
     text-align: center;
 }
+
+@media (max-width: 800px) {
+    .site-content {
+        padding: 5em 2em;
+    }
+}

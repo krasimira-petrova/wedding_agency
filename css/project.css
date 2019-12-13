@@ -27,3 +27,22 @@
 .project-container .item-width-2 {
     grid-column: span 2;
 }
+
+@media (max-width: 1000px) {
+    .project-container {
+        padding-top: 1em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 0.2em;
+        grid-row-gap: 0.2em;
+    }
+    .project-container .item-width-2 {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-container {
+        grid-template-columns: auto;
+    }
+}
