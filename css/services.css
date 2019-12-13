@@ -39,5 +39,32 @@
 
 .services .content ul {
     text-align: left;
-    padding: 0 7em;
+    padding: 0 5em;
+}
+
+@media (max-width: 1000px) {
+    .services .content ul {
+        padding: 0 4em;
+    }
+}
+
+@media (max-width: 800px) {
+    .services .content ul {
+        padding: 0 3em;
+    }
+}
+
+@media (max-width: 600px) {
+    .services {
+        display: block;
+        height: auto;
+    }
+    .services .media {
+        margin: 0 auto;
+        width: 75%;
+    }
+    .services .content {
+        margin: 0 auto;
+        width: 75%;
+    }
 }
