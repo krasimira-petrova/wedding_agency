@@ -61,3 +61,14 @@
     text-align: left;
     padding: 0 5em;
 }
+
+@media (max-width: 600px) {
+    .elements-container {
+        margin: 3em 0;
+        display: block;
+    }
+    .elements-container .element {
+        margin: 3em auto;
+        width: 22em;
+    }
+}
