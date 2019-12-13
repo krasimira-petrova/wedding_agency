@@ -3,7 +3,7 @@
     flex-direction: row;
     width: 100%;
     height: 19em;
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
 .personal:nth-of-type(odd) {
@@ -40,5 +40,27 @@
     text-align: center;
     overflow: hidden;
     text-align: left;
-    padding: 0 7em
+    padding: 0 7em;
+}
+
+@media (max-width: 1000px) {
+    .personal .content {
+        padding: 0 2em;
+    }
+}
+
+@media (max-width: 800px) {
+    .personal {
+        display: block;
+        height: auto;
+    }
+    .personal .embed {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .personal .content {
+        width: auto;
+        text-align: left;
+        padding: 0 0.1em;
+    }
 }
