@@ -37,7 +37,6 @@
 
   .icon-button {
     border-radius: 2.6em;
-    cursor: pointer;
     display: inline-block;
     font-size: 1.3em;
     height: 2.1em;
@@ -47,26 +46,6 @@
     position: relative;
     text-align: center;
     user-select: none;
-
-    span {
-      display: block;
-      border-radius: 0;
-      height: 0;
-      width: 0;
-      left: 50%;
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      transition: all 0.3s;
-      background: $black-color;
-    }
-
-    &:hover span {
-      width: 2.2em;
-      height: 2.2em;
-      border-radius: 2.2em;
-      margin: -1.2em;
-    }
 
     i {
       background: none;
@@ -79,9 +58,11 @@
       z-index: 10;
       top: 0;
       transition: all 0.4s;
+      border-radius: 1.8em;
 
       &:hover {
         color: $white-color;
+        background: $black-color;
       }
     }
   }
