@@ -9,8 +9,6 @@ github_username:  krasimira-petrova
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
 
 exclude:
   - .sass-cache/
