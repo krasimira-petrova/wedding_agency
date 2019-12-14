@@ -1,6 +1,7 @@
 title: Wedding Agency
 email: krasimira.todorova.petrova@gmail.com
 description: Hello world!
+destination: docs
 baseurl: "/wedding_agency"
 url: ""
 twitter_username: krasi.t.p
@@ -11,14 +12,15 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - docs
