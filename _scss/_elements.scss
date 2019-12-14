@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@include mq(small) {
   .elements-container {
     margin: 3em 0;
     display: block;

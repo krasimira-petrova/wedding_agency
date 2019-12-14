@@ -94,7 +94,7 @@
   background-position: center;
 }
 
-@media (max-width: 1000px) {
+@include mq(large) {
   .site-header {
     display: block;
   }

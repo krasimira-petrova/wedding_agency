@@ -42,19 +42,19 @@
   }
 }
 
-@media (max-width: 1000px) {
+@include mq(large) {
   .services .content ul {
     padding: 0 4em;
   }
 }
 
-@media (max-width: 800px) {
+@include mq(medium) {
   .services .content ul {
     padding: 0 3em;
   }
 }
 
-@media (max-width: 600px) {
+@include mq(small) {
   .services {
     display: block;
     height: auto;

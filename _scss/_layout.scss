@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-@media (max-width: 800px) {
+@include mq(medium) {
     .site-content {
         padding: 5em 2em;
     }

@@ -87,7 +87,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@include mq(small) {
   .contacts-container {
     width: auto;
   }

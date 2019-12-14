@@ -38,7 +38,7 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
+@include mq(small) {
   .site-footer-nav {
     display: none;
   }

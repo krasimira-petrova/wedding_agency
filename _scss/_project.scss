@@ -28,7 +28,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@include mq(large) {
   .project-container {
     padding-top: 1em;
     grid-template-columns: repeat(2, 1fr);
@@ -42,7 +42,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@include mq(small) {
   .project-container {
     grid-template-columns: auto;
   }
