@@ -1,12 +1,11 @@
 .elements-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0 3em 4em 3em;
-    flex-wrap: wrap;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 3em 4em 3em;
+  flex-wrap: wrap;
 
-.elements-container .element {
+  .element {
     color: $black-color;
     width: 25em;
     text-align: center;
@@ -14,22 +13,31 @@
     height: 16em;
     position: relative;
     margin: 2em;
-}
+  }
 
-.elements-container .card {
+  .card {
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
     width: 100%;
     display: block;
-}
 
-.elements-container .card:hover {
-    transform: rotateY(180deg);
-}
+    &:hover {
+      transform: rotateY(180deg);
+    }
 
-.elements-container .card>div {
+    h4 {
+      margin: 0;
+    }
+
+    ul {
+      text-align: left;
+      padding: 0 5em;
+    }
+  }
+
+  .card > div {
     backface-visibility: hidden;
     border-radius: 2em;
     height: 100%;
@@ -37,38 +45,31 @@
     overflow: hidden;
     width: 100%;
     box-shadow: 0 0 1em $shadow-color;
-}
+  }
 
-.elements-container .front img {
+  .front img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-}
+  }
 
-.elements-container .back {
+  .back {
     color: black;
     text-align: center;
     transform: rotateY(180deg);
     background: $main-background-color;
-}
-
-.elements-container .card h4 {
-    margin: 0;
-}
-
-.elements-container .card ul {
-    text-align: left;
-    padding: 0 5em;
+  }
 }
 
 @media (max-width: 600px) {
-    .elements-container {
-        margin: 3em 0;
-        display: block;
+  .elements-container {
+    margin: 3em 0;
+    display: block;
+
+    .element {
+      margin: 3em auto;
+      width: 22em;
     }
-    .elements-container .element {
-        margin: 3em auto;
-        width: 22em;
-    }
+  }
 }

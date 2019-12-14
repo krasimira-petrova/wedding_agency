@@ -4,36 +4,38 @@ footer {
   background: $footer-background-color;
   color: $white-color;
   padding: 2em;
+
+  .copyright {
+    padding: 0.5em 1em;
+    flex-grow: 2;
+
+    a {
+      color: darken($white-color, 30%);
+    }
+  }
 }
 
-footer .copyright {
-  padding: 0.5em 1em;
-  flex-grow: 2;
-}
+.site-footer-nav {
+  ul {
+    display: flex;
+    justify-content: flex-end;
+  }
 
-footer .copyright a {
-  color: darken($white-color, 30%);
-}
+  li {
+    display: block;
+    list-style: none;
+  }
 
-.site-footer-nav ul {
-  display: flex;
-  justify-content: flex-end;
-}
+  a {
+    display: block;
+    padding: 0.5em 1em;
+    color: $white-color;
+    text-decoration: none;
 
-.site-footer-nav li {
-  display: block;
-  list-style: none;
-}
-
-.site-footer-nav a {
-  display: block;
-  padding: 0.5em 1em;
-  color: $white-color;
-  text-decoration: none;
-}
-
-.site-footer-nav a:hover {
-  color: darken($white-color, 30%);
+    &:hover {
+      color: darken($white-color, 30%);
+    }
+  }
 }
 
 @media (max-width: 600px) {

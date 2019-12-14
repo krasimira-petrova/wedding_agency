@@ -4,91 +4,87 @@
   width: 60%;
   border-radius: 2em;
   box-shadow: 0 0 1em $shadow-color;
-}
 
-.contacts-container .social {
-  text-align: right;
-  padding: 0 0 1em;
-}
+  .social {
+    text-align: right;
+    padding: 0 0 1em;
+  }
 
-.contacts-container input,
-.contacts-container textarea {
-  width: 100%;
-  padding: 1em;
-  border: 0.1em solid black;
-  border-radius: 0.5em;
-  margin: 0.5em 0;
-  outline: none;
-}
+  input,
+  textarea {
+    width: 100%;
+    padding: 1em;
+    border: 0.1em solid $black-color;
+    border-radius: 0.5em;
+    margin: 0.5em 0;
+    outline: none;
+  }
 
-.contacts-container textarea {
-  height: 15em;
-}
+  textarea {
+    height: 15em;
+  }
 
-.contacts-container .submit {
-  background: $submit-button-color;
-  width: auto;
-  height: 3.5em;
-  font-weight: 600;
-}
+  .submit {
+    background: $submit-button-color;
+    width: auto;
+    height: 3.5em;
+    font-weight: 600;
 
-.contacts-container .submit:hover {
-  background-color: darken($submit-button-color, 10%);
-}
+    &:hover {
+      background-color: darken($submit-button-color, 10%);
+    }
+  }
 
-.icon-button {
-  border-radius: 2.6em;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.3em;
-  height: 2.1em;
-  width: 2.1em;
-  line-height: 2.5em;
-  margin: 0 0.1em;
-  position: relative;
-  text-align: center;
-  user-select: none;
-}
+  .icon-button {
+    border-radius: 2.6em;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3em;
+    height: 2.1em;
+    width: 2.1em;
+    line-height: 2.5em;
+    margin: 0 0.1em;
+    position: relative;
+    text-align: center;
+    user-select: none;
 
-.icon-button span {
-  display: block;
-  border-radius: 0;
-  height: 0;
-  width: 0;
-  left: 50%;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transition: all 0.3s;
-  background: $black-color;
-}
+    span {
+      display: block;
+      border-radius: 0;
+      height: 0;
+      width: 0;
+      left: 50%;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      transition: all 0.3s;
+      background: $black-color;
+    }
 
-.icon-button:hover span {
-  width: 2.2em;
-  height: 2.2em;
-  border-radius: 2.2em;
-  margin: -1.2em;
-}
+    &:hover span {
+      width: 2.2em;
+      height: 2.2em;
+      border-radius: 2.2em;
+      margin: -1.2em;
+    }
 
-.icon-button i {
-  background: none;
-  color: white;
-  height: 1.8em;
-  width: 1.8em;
-  left: 0;
-  line-height: 1.9em;
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  transition: all 0.4s;
-}
+    i {
+      background: none;
+      color: $black-color;
+      height: 1.8em;
+      width: 1.8em;
+      left: 0;
+      line-height: 1.9em;
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      transition: all 0.4s;
 
-.icon-button i {
-  color: $black-color;
-}
-
-.icon-button i:hover {
-  color: $white-color;
+      &:hover {
+        color: $white-color;
+      }
+    }
+  }
 }
 
 @media (max-width: 600px) {

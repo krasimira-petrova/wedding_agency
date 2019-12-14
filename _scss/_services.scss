@@ -1,19 +1,11 @@
 .services {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 19em;
-    margin-top: 5em;
-}
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 19em;
+  margin-top: 5em;
 
-.services .media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.services .media {
+  .media {
     border-radius: 2em;
     overflow: hidden;
     width: 50%;
@@ -21,50 +13,60 @@
     opacity: 0.8;
     transition: transform 1s;
     box-shadow: 0 0 1em $shadow-color;
-}
 
-.services .media:hover {
-    opacity: 1;
-    transform: scale(1.1);
-    z-index: 20;
-}
+    &:hover {
+      opacity: 1;
+      transform: scale(1.1);
+      z-index: 20;
+    }
 
-.services .content {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .content {
     color: #000;
     width: 50%;
     height: 100%;
     text-align: center;
     overflow: hidden;
-}
 
-.services .content ul {
-    text-align: left;
-    padding: 0 5em;
+    ul {
+      text-align: left;
+      padding: 0 5em;
+    }
+  }
 }
 
 @media (max-width: 1000px) {
-    .services .content ul {
-        padding: 0 4em;
-    }
+  .services .content ul {
+    padding: 0 4em;
+  }
 }
 
 @media (max-width: 800px) {
-    .services .content ul {
-        padding: 0 3em;
-    }
+  .services .content ul {
+    padding: 0 3em;
+  }
 }
 
 @media (max-width: 600px) {
-    .services {
-        display: block;
-        height: auto;
+  .services {
+    display: block;
+    height: auto;
+
+    .media {
+      margin: 0 auto;
+      width: 75%;
     }
-    .services .media {
-        margin: 0 auto;
-        width: 75%;
+
+    .content {
+      margin: 0 auto;
+      width: 75%;
     }
-    .services .content {
-        margin: 0 auto;
-        width: 75%;
-    }
+  }
 }
