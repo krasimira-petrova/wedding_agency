@@ -24,7 +24,7 @@
     height: 100%;
     opacity: 0.8;
     transition: transform 1s;
-    box-shadow: 0 0 1em rgba(106, 47, 50, 0.8);
+    box-shadow: 0 0 1em $shadow-color;
 }
 
 .personal .embed:hover {
@@ -34,7 +34,7 @@
 }
 
 .personal .content {
-    color: #000;
+    color: $black-color;
     width: 50%;
     height: 100%;
     text-align: center;

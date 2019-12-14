@@ -7,7 +7,7 @@
 }
 
 .elements-container .element {
-    color: #000;
+    color: $black-color;
     width: 25em;
     text-align: center;
     cursor: pointer;
@@ -36,7 +36,7 @@
     position: absolute;
     overflow: hidden;
     width: 100%;
-    box-shadow: 0 0 1em rgba(106, 47, 50, 0.8);
+    box-shadow: 0 0 1em $shadow-color;
 }
 
 .elements-container .front img {
@@ -50,7 +50,7 @@
     color: black;
     text-align: center;
     transform: rotateY(180deg);
-    background: rgb(247, 238, 238);
+    background: $main-background-color;
 }
 
 .elements-container .card h4 {

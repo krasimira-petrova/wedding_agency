@@ -3,7 +3,7 @@
   padding: 2em;
   width: 60%;
   border-radius: 2em;
-  box-shadow: 0 0 1em rgba(106, 47, 50, 0.8);
+  box-shadow: 0 0 1em $shadow-color;
 }
 
 .contacts-container .social {
@@ -11,7 +11,8 @@
   padding: 0 0 1em;
 }
 
-.contacts-container input, .contacts-container textarea {
+.contacts-container input,
+.contacts-container textarea {
   width: 100%;
   padding: 1em;
   border: 0.1em solid black;
@@ -25,18 +26,17 @@
 }
 
 .contacts-container .submit {
-  background: rgb(231, 203, 203);
+  background: $submit-button-color;
   width: auto;
   height: 3.5em;
   font-weight: 600;
 }
 
 .contacts-container .submit:hover {
-  background-color: rgb(214, 168, 168);
+  background-color: darken($submit-button-color, 10%);
 }
 
 .icon-button {
-  background-color: rgb(247, 238, 238);
   border-radius: 2.6em;
   cursor: pointer;
   display: inline-block;
@@ -60,7 +60,7 @@
   position: absolute;
   top: 50%;
   transition: all 0.3s;
-  background: #322924;
+  background: $black-color;
 }
 
 .icon-button:hover span {
@@ -84,15 +84,15 @@
 }
 
 .icon-button i {
-  color: #322924;
+  color: $black-color;
 }
 
 .icon-button i:hover {
-  color: white;
+  color: $white-color;
 }
 
 @media (max-width: 600px) {
-  .contacts-container  {
+  .contacts-container {
     width: auto;
   }
 }

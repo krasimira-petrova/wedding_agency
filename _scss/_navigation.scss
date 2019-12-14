@@ -18,7 +18,7 @@
 }
 
 .site-nav ul li.current-page a {
-    color: rgb(214, 168, 168);
+    color: $navigation-active-color;
 }
 
 .site-nav ul li:nth-child(1) {

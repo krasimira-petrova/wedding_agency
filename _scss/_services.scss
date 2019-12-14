@@ -20,7 +20,7 @@
     height: 100%;
     opacity: 0.8;
     transition: transform 1s;
-    box-shadow: 0 0 1em rgba(106, 47, 50, 0.8);
+    box-shadow: 0 0 1em $shadow-color;
 }
 
 .services .media:hover {
