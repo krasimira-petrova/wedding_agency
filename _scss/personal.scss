@@ -1,70 +1,66 @@
-.services {
+.personal {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 19em;
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
-.services .media img {
+.personal:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+
+.personal .embed img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.services .media {
+.personal .embed {
     border-radius: 2em;
     overflow: hidden;
     width: 50%;
     height: 100%;
     opacity: 0.8;
     transition: transform 1s;
-    box-shadow: 0 0 1em rgb(106, 47, 50, 0.8);
+    box-shadow: 0 0 1em rgba(106, 47, 50, 0.8);
 }
 
-.services .media:hover {
+.personal .embed:hover {
     opacity: 1;
     transform: scale(1.1);
     z-index: 20;
 }
 
-.services .content {
+.personal .content {
     color: #000;
     width: 50%;
     height: 100%;
     text-align: center;
     overflow: hidden;
-}
-
-.services .content ul {
     text-align: left;
-    padding: 0 5em;
+    padding: 0 7em;
 }
 
 @media (max-width: 1000px) {
-    .services .content ul {
-        padding: 0 4em;
+    .personal .content {
+        padding: 0 2em;
     }
 }
 
 @media (max-width: 800px) {
-    .services .content ul {
-        padding: 0 3em;
-    }
-}
-
-@media (max-width: 600px) {
-    .services {
+    .personal {
         display: block;
         height: auto;
     }
-    .services .media {
-        margin: 0 auto;
+    .personal .embed {
         width: 75%;
+        margin: 0 auto;
     }
-    .services .content {
-        margin: 0 auto;
-        width: 75%;
+    .personal .content {
+        width: auto;
+        text-align: left;
+        padding: 0 0.1em;
     }
 }
